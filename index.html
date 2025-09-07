@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Interactive Web Page</h1>
+    <button id="themeToggle"> Theme Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1: Event Handling -->
+    <section>
+      <h2>Event Handling</h2>
+      <button id="messageBtn">Button</button>
+      <p id="messageOutput"></p>
+    </section>
+
+    <!-- Part 2: Interactive Elements -->
+    <section>
+      <h2>Interactive Elements</h2>
+
+      <!-- Counter -->
+      <div class="counter">
+        <h3>Counter Game</h3>
+        <p id="countDisplay">0</p>
+        <button id="incrementBtn">➕ Increment</button>
+        <button id="resetBtn">🔄 Reset</button>
+      </div>
+
+      <!-- FAQ -->
+      <div class="faq">
+        <h3>FAQ Section</h3>
+        <div class="faq-item">
+          <button class="faq-question">What is this?</button>
+          <div class="faq-answer">This is an interactive freq asked question built with JavaScript!</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">How does it work?</button>
+          <div class="faq-answer">Click to reveal.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+      <h2>Form with Validation</h2>
+      <form id="signupForm">
+        <label>
+          Name:
+          <input type="text" id="name" required>
+        </label>
+        <small class="error" id="nameError"></small>
+
+        <label>
+          Email:
+          <input type="text" id="email" required>
+        </label>
+        <small class="error" id="emailError"></small>
+
+        <label>
+          Password:
+          <input type="password" id="password" required>
+        </label>
+        <small class="error" id="passwordError"></small>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formSuccess"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
